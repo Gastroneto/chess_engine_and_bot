@@ -469,6 +469,8 @@ def get_price(color):
 
                 elif str(Board.land[i][j]) == str(Horse(color)):
                     price += 30
+                elif str(Board.land[i][j]) == str(King(color)):
+                    price += 300   
                 elif str(Board.land[i][j]) == str(Officer(color)):
                     price += 30
                 elif str(Board.land[i][j]) == str(Castle(color)):
